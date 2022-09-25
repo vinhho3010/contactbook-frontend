@@ -1,9 +1,9 @@
 <template>
-    <div class="page container">
+    <div class="page container align-center">
 
         <div class="row">
             <div class="offset-md-4 col-md-6">
-                <p>
+                <p class="error-description">
                     Oops, Không thể tìm thấy trang. 
                 </p>
             </div>
@@ -17,11 +17,11 @@
     </div>
 </template>
 
-<style scope>
-    .page{
+<style scoped>
+    .align-center{
         margin-top: 30vh;
     }
-    p{
+    .error-description{
         padding-left: 25px;
         font-size: 24px;
     }
