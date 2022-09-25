@@ -1,15 +1,36 @@
-<script>
-  export default {
-  }
-</script>
-
 <template>
-  <h1>Hello, Vue.js!</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <AppHeader/>
+      </div>
+
+      <div class="mt-3 row">
+        
+        <div class="col-md-3"></div>
+
+        <router-view/>
+      </div>
+    </div>
+    
+
 </template>
 
+<script>
+  import AppHeader from '@/components/AppHeader.vue';
+  
+    export default {
+      components: {
+        AppHeader,
+      },
+    };
+</script>
+
+
 <style>
-  .page {
+ 
+  .page{
     max-width: 400px;
     margin: auto;
   }
+  
 </style>
