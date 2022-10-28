@@ -6,7 +6,7 @@
 
       <div class="mt-3 row">
         
-        <div class="col-md-3"></div>
+        <div class="col-md-3 col-sm-3 col-lg-3"></div>
 
         <router-view/>
       </div>
