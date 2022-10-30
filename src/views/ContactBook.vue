@@ -14,7 +14,7 @@
                 :contacts="filteredContacts"
                 v-model:activeIndex="activeIndex"
             />
-            <p v-else> Không có thông tin liên hệ nào.</p>
+            <p style="color: red" v-else> Không có thông tin liên hệ nào.</p>
 
             <div type="button" class="mt-3 justify-content-around align-items-center">
                 <button class="btn btn-sm btn-primary margin1" @click="refreshList()">
@@ -46,8 +46,10 @@
                         params: { id: activeContact._id },
                     }"
                 >
-                <button type="button" class=" mt-2 btn btn-sm btn-warning"
-                ><i class="fas fa-edit"></i> Hiệu chỉnh</button> 
+                <button type="submit" class=" mt-2 btn btn-sm btn-warning">
+                    <i class="fas fa-edit"></i>
+                     Hiệu chỉnh
+                </button> 
             </router-link>
 
             </div>
@@ -79,6 +81,7 @@
             //in contactCard component throught make activeIndex = -1
             searchText(){
                 this.activeIndex = -1;
+                console.log(this.searchText);
             },
         },
         computed: {

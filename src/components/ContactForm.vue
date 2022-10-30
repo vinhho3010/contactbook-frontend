@@ -44,7 +44,6 @@
             <ErrorMessage name="phone" class="error-feedback"/>
         </div>
         <div class="form-group group-check" >
-            
             <label for="favorite" class="form-check-label my-2">
                 <input
                 id="favorite"

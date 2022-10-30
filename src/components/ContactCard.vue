@@ -3,6 +3,7 @@
         props: {
             contact: {type: Object, required: true},
         },
+
     };
 </script>
 

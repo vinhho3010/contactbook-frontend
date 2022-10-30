@@ -16,19 +16,19 @@
 </script>
 
 <template>
-    <div class="input-group">
+    <div class="input-group ">
         <input
             type="text"
-            class="form-control"
+            class="form-control rounded"
             placeholder="Nhập thông tin cần tìm"
             :value="modelValue"
             @input="updateModelValue"
             @keyup.enter="submit"
         />
 
-        <div class="input-group-append">
+        <div class="input-group-append mx-1">
             <button 
-                class="btn btn-outline-secondary "
+                class="btn btn-outline-primary "
                 type="button"
                 @click="submit"
             >
